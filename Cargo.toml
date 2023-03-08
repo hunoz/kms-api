@@ -19,6 +19,7 @@ eui48 = { version = "1.1.0", features = ["serde_json", "serde"] }
 getset = "0.1.2"
 lazy_static = "1.4.0"
 log = "0.4.17"
+openssl = { version = "0.10.45", features = ["vendored"] }
 paperclip = { version = "0.8.0", features = ["actix4", "swagger-ui"] }
 regex = "1.7.1"
 reqwest = { version = "0.11.14", features = ["json", "blocking", "cookie_store", "cookies"] }
