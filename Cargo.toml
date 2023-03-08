@@ -1,0 +1,28 @@
+[package]
+name = "kms"
+description = "Kubernetes Management System"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.3.0"
+clap = { version = "4.1.8", features = ["derive"] }
+config = "0.13.3"
+convert_case = "0.6.0"
+derive_builder = "0.12.0"
+derive_more = "0.99.17"
+either = { version = "1.8.1", features = ["serde"] }
+env_logger = "0.10.0"
+eui48 = { version = "1.1.0", features = ["serde_json", "serde"] }
+getset = "0.1.2"
+lazy_static = "1.4.0"
+log = "0.4.17"
+paperclip = { version = "0.8.0", features = ["actix4", "swagger-ui"] }
+regex = "1.7.1"
+reqwest = { version = "0.11.14", features = ["json", "blocking", "cookie_store", "cookies"] }
+serde = "1.0.152"
+serde_derive = "1.0.152"
+serde_json = "1.0.93"
+validator = { version = "0.16.0", features = ["derive"] }
