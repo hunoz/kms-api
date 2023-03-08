@@ -15,3 +15,8 @@ To compile from Mac to Linux x86-64, perform the following commands:
 6. export AR_x86_64_unknown_linux_gnu=x86_64-unknown-linux-gnu-ar
 7. export CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER=x86_64-unknown-linux-gnu-gcc
 8. cargo build -r --target x86_64-unknown-linux-gnu
+
+
+If you wish to test execution in a Linux environment, perform the above section and then use Docker to run it with the following commands:
+`docker run --rm -v $(pwd)/config:/tmp/config -v $(pwd)/target/x86_64-unknown-linux-gnu/release/kms:/tmp/kms -p 8080:8080 fedora bash -c "cd /tmp && RUST_LOG=debug ./kms"`
+`curl http://127.0.0.1:8080` with the route you wish to test
