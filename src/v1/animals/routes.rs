@@ -1,4 +1,4 @@
-use crate::api::v1::animals::models::{errors::{Errors, parse_validation_errors}, responses::{Response}, dog::{Dog}};
+use crate::v1::animals::models::{errors::{Errors, parse_validation_errors}, responses::{Response}, dog::{Dog}};
 use validator::Validate;
 use paperclip::actix::{web::Json, api_v2_operation, get, post};
 

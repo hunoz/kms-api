@@ -1,6 +1,6 @@
 mod clients;
 mod settings;
-mod api;
+mod v1;
 
 use std::{net::Ipv4Addr, ops::RangeInclusive, process};
 
@@ -8,7 +8,7 @@ use actix_web::{App, HttpServer, web::Data};
 use clap::Parser;
 use env_logger::{Builder, Target};
 use log::{info, error};
-use api::{v1};
+use v1::{animals, devices};
 use settings::{Settings, ServerSettings, UnifiSettings, SettingsBuilder};
 use paperclip::actix::{OpenApiExt, web::scope};
 

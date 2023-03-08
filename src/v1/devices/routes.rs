@@ -1,6 +1,6 @@
 use std::{collections::HashMap, borrow::Cow, panic};
 
-use crate::{api::v1::devices::models::{responses::Response, errors::Errors, device::Device, errors::create_error_response_for_mac_address}, clients::unifi::{UnifiApiClient, models::ListClientsResponse}, settings::Settings};
+use crate::{v1::devices::models::{responses::Response, errors::Errors, device::Device, errors::create_error_response_for_mac_address}, clients::unifi::{UnifiApiClient, models::ListClientsResponse}, settings::Settings};
 use eui48::MacAddress;
 
 use actix_web::{web::{Path, Data}, Result, HttpResponse};
