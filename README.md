@@ -1,0 +1,2 @@
+## Documentation
+This package is called KMS, short for Kubernetes Management System. This package will allow automatic provisioning of a new Kubernetes machine. It will store each device in a DynamoDB table, which your choice of automation can pick up and use (e.g. a Kickstart server that creates its files dynamically based on this information).
